@@ -113,8 +113,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            'host': 'uri = "mongodb+srv://businesshallmarkbooks:tPLn5d6U3ix05eih@cluster0.naemb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-', # Replace with your MongoDB server address
+            'host': "mongodb+srv://businesshallmarkbooks:tPLn5d6U3ix05eih@cluster0.naemb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", # Replace with your MongoDB server address
             'port': 27017,               # Replace with your MongoDB port if different
             'username': 'businesshallmarkbooks', # Replace with your MongoDB username (optional)
             'password': 'tPLn5d6U3ix05eih', # Replace with your MongoDB password (optional)
