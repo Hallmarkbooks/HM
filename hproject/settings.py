@@ -111,15 +111,12 @@ WSGI_APPLICATION = 'hproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'CLIENT': {
-            'host': "mongodb+srv://businesshallmarkbooks:tPLn5d6U3ix05eih@cluster0.naemb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", # Replace with your MongoDB server address
-            'port': 27017,               # Replace with your MongoDB port if different
-            'username': 'businesshallmarkbooks', # Replace with your MongoDB username (optional)
-            'password': 'tPLn5d6U3ix05eih', # Replace with your MongoDB password (optional)
-        },
-        'NAME': 'hallmark',
-        'ENFORCE_SCHEMA':False,
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres.jxxbpnsvvtkocghlnhrg',
+        'PASSWORD': 'Eu190304-1993',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+        'PORT': '6543',
     }
 }
 
