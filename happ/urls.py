@@ -9,7 +9,4 @@ urlpatterns = [
     path('sendmail/', views.contact, name= 'contact'),
     path('order/', views.order_view, name='order'),
 
-]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
