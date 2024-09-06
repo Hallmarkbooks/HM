@@ -124,6 +124,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://192.168.245.231:5173",
     "http://192.168.1.26:5173",
+    "https://hm-9z8w.onrender.com",
 ]
 
 # Password validation
