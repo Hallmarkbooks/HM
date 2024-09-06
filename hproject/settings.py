@@ -104,7 +104,7 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': 'zgfujSvjxYfBJHhewgWGJoOTsKCtpSLb',
-        'HOST': 'meticulous-empathy.railway.internal',
+        'HOST': 'autorack.proxy.rlwy.net',
         'PORT': '5432',
     }
 }
