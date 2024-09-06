@@ -98,17 +98,31 @@ WSGI_APPLICATION = 'hproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'zgfujSvjxYfBJHhewgWGJoOTsKCtpSLb',
+#         'HOST': 'autorack.proxy.rlwy.net',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'zgfujSvjxYfBJHhewgWGJoOTsKCtpSLb',
-        'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '5432',
+        'ENGINE': 'djongo',
+        'CLIENT': {
+            'host': 'uri = "mongodb+srv://businesshallmarkbooks:tPLn5d6U3ix05eih@cluster0.naemb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+', # Replace with your MongoDB server address
+            'port': 27017,               # Replace with your MongoDB port if different
+            'username': 'businesshallmarkbooks', # Replace with your MongoDB username (optional)
+            'password': 'tPLn5d6U3ix05eih', # Replace with your MongoDB password (optional)
+        },
+        'NAME': 'hallmark',
+        'ENFORCE_SCHEMA':False,
     }
 }
-   
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
