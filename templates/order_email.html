@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .email-container {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+        }
+        .content {
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="https://example.com/logo.png" alt="Logo">
+            <h1>New order</h1>
+        </div>
+        <div class="content">
+            <p><strong>Book Title:</strong> {{ book_title }}</p>
+            <p><strong>Book Grade:</strong> {{ book_grade }}</p>
+            <p><strong>Name of School:</strong> {{ name_of_school }}</p>
+            <p><strong>Quantity Needed:</strong> {{ quantity }}</p>
+            <p><strong>Phone Number:</strong> {{ phone_number }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>School Address:</strong> {{ school_address }}</p>
+        </div>
+        <div class="footer">
+            <p>Incoming Order!</p>
+            <p>Best regards,<br>Hallmark</p>
+        </div>
+    </div>
+</body>
+</html>
