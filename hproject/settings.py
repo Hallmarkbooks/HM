@@ -126,6 +126,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.245.231:5173",
     "http://192.168.1.26:5173",
     "https://hm-9z8w.onrender.com",
+    "https://hallmarkbooks.vercel.app",
 ]
 
 # Password validation
